@@ -6,9 +6,15 @@ This project has two purposes:
 ___
 ## **Results:**
 ### **Stock Analysis**
-As shown below, nearly all of the stocks performed much better in 2017 compared to 2018. 
- 
- insert image files here
+As shown below, nearly all of the stocks performed much better in 2017 compared to 2018. While this analysis is limited to only two years, it appears these stocks react similarly within the stock market.  Diversification with bonds or stocks in different market segments may mitigate the negative impacts of stock market volatility on investment returns.
+
+**2017 Results:**
+
+![Results2017](https://user-images.githubusercontent.com/90986041/134818363-21d51b71-0035-4d6b-80c5-81f188c53af6.png)
+
+**2018 Results:**
+
+![Results2018](https://user-images.githubusercontent.com/90986041/134818262-6be91942-e87e-4dd2-b357-ddd15579fc1f.png)
 
 ### **Code Execution Performance**
 
@@ -61,7 +67,17 @@ Listed below are examples of ways to improve code execution performance:
         Next i
 After making these small changes, the run time performance improved. 
 
-*insert before and after image files here*
+**2017: Original Results - 1.28 seconds**
+![Original_2017_Run_Time](https://user-images.githubusercontent.com/90986041/134818085-d32e0035-ee02-4329-99b3-d47b0f658d24.png)
+
+**2017: Refactored Results - 0.82 seconds**
+![VBA_Challenge_202017](https://user-images.githubusercontent.com/90986041/134818096-e895b63a-836c-4a2d-97a4-c605f278ca49.png)
+
+**2018: Original Results - 1.22 seconds**
+![Original_2018_Run_Time](https://user-images.githubusercontent.com/90986041/134818101-d640b0d8-d7b3-475f-9bde-087607e7d7ea.png)
+
+**2018 Refactored Results - 0.81 seconds**
+![VBA_Challenge_2018](https://user-images.githubusercontent.com/90986041/134818109-f2741aed-2bf2-4f9d-a27f-3fefcee2d09b.png)
 
 While a 1/2 second improvement may not sound impressive, it is proof that being mindful of code order, iterations, and eliminating redudant operations will improve processing time.
 
