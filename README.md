@@ -16,7 +16,7 @@ As shown below, nearly all of the stocks performed much better in 2017 compared 
 
 ![Results2018](https://user-images.githubusercontent.com/90986041/134818262-6be91942-e87e-4dd2-b357-ddd15579fc1f.png)
 
-(See Data Source file link below.)
+(See Refactored data source file link below.)
 
 ### **Code Execution Performance**
 
@@ -102,6 +102,10 @@ Before beginning the refactoring process, these are very important steps:
 
 While refactoring the original VBA script, I experienced each disadvantage listed above. Some of my changes created bugs, due to new coder errors.  When I initially revised one of the For Next loops it stopped too soon and the last row of data didn't populate on the output sheet. After one of my first changes, while the results were correct, the run time was longer than the original script run time.  Without copies of the original script, results, and run times, I would have unintentionally made things worse.  In the end, I prevailed and achieved all of the above-mentioned refactoring advantages.
 ___
-**Data Source:** https://github.com/SJLewer/stock-analysis/blob/main/VBA_Challenge.xlsm
+**Data Sources:** 
+
+[Refactored File] https://github.com/SJLewer/stock-analysis/blob/main/VBA_Challenge.xlsm
+
+[Original File] https://github.com/SJLewer/stock-analysis/blob/main/green_stocks.xlsm
 
 **Analyst:** S. Lewer
