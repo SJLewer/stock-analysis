@@ -6,7 +6,7 @@ This project has two purposes:
 ___
 ## **Results:**
 ### **Stock Analysis**
-As shown below, nearly all of the stocks performed much better in 2017 compared to 2018. While this analysis is limited to only two years, it appears these stocks react similarly within the stock market.  Diversification with bonds or stocks in different market segments may mitigate the negative impacts of stock market volatility on investment returns.
+As shown below, nearly all of the stocks performed much better in 2017 compared to 2018. While this analysis is limited to only two years, it appears these stocks react similarly within the stock market.  Diversification with bonds or stocks in different market segments may mitigate the negative impacts of stock market volatility on investment returns.  
 
 **2017 Results:**
 
@@ -16,9 +16,11 @@ As shown below, nearly all of the stocks performed much better in 2017 compared 
 
 ![Results2018](https://user-images.githubusercontent.com/90986041/134818262-6be91942-e87e-4dd2-b357-ddd15579fc1f.png)
 
+(See Data Source file link below.)
+
 ### **Code Execution Performance**
 
-Listed below are examples of ways to improve code execution performance:
+Below are examples of ways to improve code execution performance:
 * *Minimize the number of times a worksheet is activated.*  I moved the "Worksheets("All Stocks Analysis").Activate" command line from the beginning of the script to the end into section (4) "Loop through...arrays to output...".  With this change, the data sheet was activated once and the output sheet was activated once.  The duplicative "Activate" command line in section (4) was not needed. I also moved the 'Create a header row into section (4), after the output worksheet was activated.
     ``` 
         Worksheets("All Stocks Analysis").Activate
@@ -79,7 +81,7 @@ After making these small changes, the run time performance improved.
 **2018 Refactored Results - 0.81 seconds**
 ![VBA_Challenge_2018](https://user-images.githubusercontent.com/90986041/134818109-f2741aed-2bf2-4f9d-a27f-3fefcee2d09b.png)
 
-While a 1/2 second improvement may not sound impressive, it is proof that being mindful of code order, iterations, and eliminating redudant operations will improve processing time.
+While a 1/2 second improvement may not sound impressive, it is proof that being mindful of code order, iterations, and eliminating redundant operations will improve processing time.
 
 ___
 ## SUMMARY
@@ -100,6 +102,6 @@ Before beginning the refactoring process, these are very important steps:
 
 While refactoring the original VBA script, I experienced each disadvantage listed above. Some of my changes created bugs, due to new coder errors.  When I initially revised one of the For Next loops it stopped too soon and the last row of data didn't populate on the output sheet. After one of my first changes, while the results were correct, the run time was longer than the original script run time.  Without copies of the original script, results, and run times, I would have unintentionally made things worse.  In the end, I prevailed and achieved all of the above-mentioned refactoring advantages.
 ___
-Data Source: insert link to file here
+**Data Source:** https://github.com/SJLewer/stock-analysis/blob/main/VBA_Challenge.xlsm
 
-Analyst: S. Lewer
+**Analyst:** S. Lewer
